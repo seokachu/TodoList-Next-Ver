@@ -25,6 +25,8 @@ const TodoList = () => {
   const workingTodos = todos.filter((item) => !item.isDone);
   const doneTodos = todos.filter((item) => item.isDone);
 
+  console.log(todos);
+
   return (
     <>
       {renderTodoItems("✍️ WORKING", workingTodos, "작성한 내용이 없습니다.")}

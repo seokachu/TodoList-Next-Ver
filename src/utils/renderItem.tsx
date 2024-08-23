@@ -14,7 +14,7 @@ export const renderTodoItems = (
         {items.length > 0 ? (
           items.map((todo) => <TodoItems key={todo.id} todo={todo} />)
         ) : (
-          <p>{isEmptyMessage}</p>
+          <p className={S.emptyMessage}>{isEmptyMessage}</p>
         )}
       </ul>
     </section>

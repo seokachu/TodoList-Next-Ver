@@ -50,6 +50,9 @@ const TodoItems = ({ todo }: TodoItemProps) => {
   //완료 버튼
   const onClickToggleHandler = () => {
     editMutate(id);
+    toast.success(
+      isDone ? "작업이 미완료 상태로 이동되었습니다." : "작업이 완료되었습니다."
+    );
   };
 
   return (
