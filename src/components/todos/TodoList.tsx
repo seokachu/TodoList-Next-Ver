@@ -1,10 +1,9 @@
 import { getTodos } from "@/api/todos";
 import { InputForm } from "@/types";
 import { useQuery } from "@tanstack/react-query";
-import TodoItems from "./TodoItems";
-import S from "@/styles/todos.module.scss";
 import Loading from "@/utils/Loading";
 import NotFoundPage from "@/app/not-found";
+import { renderTodoItems } from "@/utils/renderItem";
 
 const TodoList = () => {
   const query = useQuery({
@@ -25,25 +24,6 @@ const TodoList = () => {
 
   const workingTodos = todos.filter((item) => !item.isDone);
   const doneTodos = todos.filter((item) => item.isDone);
-
-  const renderTodoItems = (
-    title: string,
-    items: InputForm[],
-    isEmptyMessage: string
-  ) => {
-    return (
-      <section className={S.todoListWrapper}>
-        <h2 className={S.h2}>{title}</h2>
-        <ul className={S.todoList}>
-          {items.length > 0 ? (
-            items.map((todo) => <TodoItems key={todo.id} todo={todo} />)
-          ) : (
-            <p>{isEmptyMessage}</p>
-          )}
-        </ul>
-      </section>
-    );
-  };
 
   return (
     <>

@@ -117,24 +117,24 @@
       "title": "dd",
       "contents": "asdf",
       "createAt": "2024-08-23T19:22:34.956Z",
-      "color": "#a6ff9e",
-      "isDone": false
+      "isDone": true,
+      "color": "#a6ff9e"
     },
     {
       "id": "e361ee90-76f7-4d21-a7d6-060fb447904a",
       "title": "asdfasdf",
       "contents": "asdfasdf",
       "createAt": "2024-08-23T19:47:41.842Z",
-      "color": "#a9c4fc",
-      "isDone": false
+      "isDone": true,
+      "color": "#a9c4fc"
     },
     {
       "id": "3413e70d-d183-400d-98cc-dcb577ec74b2",
       "title": "ㅁㄴㅇㄹ",
       "contents": "ㅁㄴㅇㄹ",
       "createAt": "2024-08-23T19:55:25.182Z",
-      "color": "#ebebeb",
-      "isDone": false
+      "isDone": true,
+      "color": "#ebebeb"
     }
   ]
 }
