@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "start": "node server.js",
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
     "lint": "next lint",
     "serve": "json-server db.json --port 4000"
   },
@@ -30,5 +30,9 @@
     "eslint": "^8",
     "eslint-config-next": "14.2.5",
     "typescript": "^5"
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/seokachu/TodoList-Next-Ver.git",
+  "author": "박서영 <seokachuu@gmail.com>",
+  "license": "MIT"
 }
