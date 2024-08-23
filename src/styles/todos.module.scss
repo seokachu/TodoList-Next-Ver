@@ -1,0 +1,163 @@
+@import "variables.module.scss";
+
+/*------------ TodoForm ------------*/
+.form {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+
+  >div {
+    label {
+      margin-right: 10px;
+    }
+
+    input[type="text"] {
+      padding: 12px 20px;
+      border-radius: 20px;
+      border: 1px solid $silver-black;
+    }
+
+    .error {
+      font-size: 14px;
+      color: $error-color;
+      margin: 10px 0 0 60px;
+
+    }
+  }
+
+  .formTitle {
+    >input {
+      width: 250px;
+    }
+  }
+
+  .formContent {
+    >input {
+      width: 350px;
+    }
+  }
+
+  >button {
+    font-size: 14px;
+    height: 42px;
+    border-radius: 8px;
+    background-color: $silver-gray;
+    padding: 12px 15px;
+  }
+}
+
+/*------------ TodoList ------------*/
+.todoListWrapper {
+  .h2 {
+    font-size: 20px;
+    text-align: center;
+    margin: 54px 0;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 350px;
+      height: 1px;
+      background-color: $dark-black;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: 0px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 350px;
+      height: 1px;
+      background-color: $dark-black;
+    }
+  }
+
+  .todoList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+
+    >li {
+      width: 300px;
+      word-break: break-all;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+      line-height: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+
+      .todoListContent {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .title {
+          font-size: 20px;
+          font-weight: 700;
+        }
+
+        >p {
+          margin-bottom: 10px;
+        }
+
+
+      }
+
+      .dateAndButton {
+        display: flex;
+        flex-direction: column;
+
+        >time {
+          font-size: 13px;
+          color: $silver-black;
+        }
+
+        >div>button {
+          margin-top: 10px;
+          display: inline-block;
+          padding: 5px 10px;
+          background-color: $white;
+          border-radius: 5px;
+
+          &:hover {
+            background-color: $dark-black;
+            color: $white;
+          }
+
+          &:first-of-type {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width:960px) {
+
+  /* TodoList */
+  .todoListWrapper {
+    .h2 {
+      &::before {
+        display: none;
+      }
+
+      &::after {
+        display: none;
+      }
+    }
+
+    .todoList {
+      justify-content: center;
+    }
+  }
+}

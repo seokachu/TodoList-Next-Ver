@@ -1,0 +1,12 @@
+@import "@/styles/reset.css";
+
+* {
+  box-sizing: border-box;
+  color: #333;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
