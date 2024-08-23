@@ -1,5 +1,5 @@
 import { deleteTodos, updateTodos } from "@/api/todos";
-import { TodoItemProps } from "@/types";
+import { InputForm, TodoItemProps } from "@/types";
 import { getFormattedDate } from "@/utils/data";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import React from "react";
@@ -30,8 +30,25 @@ const TodoItems = ({ todo }: TodoItemProps) => {
         color,
       });
     },
+    // queryClient.invalidateQueries({ queryKey: ["todos"] });
     onSuccess: () => {
-      queryClient.invalidateQueries();
+      // Todos 리스트를 업데이트
+      queryClient.setQueryData<InputForm[]>(["todos"], (oldTodos) => {
+        if (!oldTodos) return [];
+
+        // 해당 항목을 제거하고 맨 뒤에 추가
+        const updatedTodos = oldTodos.filter((todo) => todo.id !== id);
+        updatedTodos.push({
+          id,
+          title,
+          contents,
+          createAt,
+          isDone: !isDone,
+          color,
+        });
+
+        return updatedTodos;
+      });
     },
   });
 
