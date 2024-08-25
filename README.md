@@ -55,13 +55,13 @@ export const todoClient = async (
     <td>
       <img src="https://github.com/user-attachments/assets/f56dc656-ec11-4161-9526-14888eb290b7" />
     </td>
-    <td>작성자가 제목이나 내용을 안했을 경우, formvalidation이 나옵니다.</td>
+    <td>사용자가 제목이나 내용을 작성 안했을 경우, formvalidation이 나옵니다.</td>
   </tr>
       <tr>
     <td>
       <img src="https://github.com/user-attachments/assets/449c55e0-5c04-472e-8dd0-ebbe32b10898" />
     </td>
-    <td>삭제 클릭시, 한번 더 경고창이 뜨고, 확인과 취소를 누르면 삭제가 완료되었습니다. 또는 삭제가 취소되었습니다. 라는 알림창을 띄워줍니다.</td>
+    <td>삭제 클릭시, 한번 더 경고창이 뜨고, 확인과 취소를 누르면 삭제가 완료되었습니다.<br>또는 삭제가 취소되었습니다. 라는 알림창을 띄워줍니다.</td>
   </tr>
       <tr>
     <td>
