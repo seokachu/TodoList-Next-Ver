@@ -1,7 +1,4 @@
-
-<img width="1018" alt="image" src="https://github.com/user-attachments/assets/27384d41-f551-4cf6-b894-9fa52cba1533">
-
-# TodoList 만들기 Next 14.Ver
+# ✏️ TodoList 만들기 Next 14.Ver
 
 - 배포 링크 : [클릭](todo-list-next-ver.vercel.app)
 
@@ -10,9 +7,42 @@
   <br>
   <br>
   <br>
-  
 
-# ✨기능 미리보기
+  
+# ✏️ Fetch를 통한 HTTP 통신
+
+- Next.js 공식문서에서 추천하는 `Fetch`로 데이터 통신을 진행해 보았습니다.
+- `Api`요청을 보내는 기본적인 함수를 하나로 합쳐서 보일러 플레이트를 줄였습니다.
+
+```ts
+export const todoClient = async (
+  endpoint: string,
+  method: string,
+  body?: InputForm
+) => {
+  const options: RequestInit = {
+    method,
+    headers: {
+      "Content-Type": "application/json",
+    },
+  };
+
+  if (body) {
+    options.body = JSON.stringify(body);
+  }
+
+  const res = await fetch(`${SERVER_URL}${endpoint}`, options);
+
+  const data = await res.json();
+  return data;
+};
+```
+  
+<br>
+<br>
+<br>
+
+# ✨ 기능 미리보기
 
 <table>
   <tr>
@@ -41,7 +71,9 @@
   </tr>
 </table>
 
-
+<br>
+<br>
+<br>
 
 
 
