@@ -1,6 +1,6 @@
 # ✏️ TodoList 만들기 Next 14.Ver
 
-- 배포 링크 : [클릭](todo-list-next-ver.vercel.app)
+- 배포 링크 : [클릭](https://todo-list-next-ver.vercel.app/)
 
 - 사용 기술 스택 : `TanStack Query`, `json-server`, `Fetch`, `SCSS`
 
