@@ -67,7 +67,7 @@ export const todoClient = async (
     <td>
       <img src="https://github.com/user-attachments/assets/bcc101fd-980b-48d7-81f3-76a04938dff4" />
     </td>
-    <td>완료 클릭시 Done영역으로 이동합니다. 또는 취소 클릭시 `Working`영역으로 이동합니다. <br>이동 시 작업이 완료 되었습니다. 또는 작업이 미완료 상태로 이동 되었습니다. 라는 알림창을 띄워줍니다.</td>
+    <td>완료 클릭시 Done영역으로 이동합니다. 또는 취소 클릭시 Working 영역으로 이동합니다. <br>이동 시 작업이 완료 되었습니다. 또는 작업이 미완료 상태로 이동 되었습니다. 라는 알림창을 띄워줍니다.</td>
   </tr>
 </table>
 
