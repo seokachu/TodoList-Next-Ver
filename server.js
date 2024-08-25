@@ -4,7 +4,7 @@ const path = require("path");
 const server = jsonServer.create();
 const router = jsonServer.router(path.join(__dirname, "db.json"));
 const middlewares = jsonServer.defaults({
-  static: path.join(__dirname, "build"),
+  static: "./build",
 });
 
 // Middleware 설정
