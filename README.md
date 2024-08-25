@@ -19,7 +19,7 @@
     <td>
       <img src="https://github.com/user-attachments/assets/057633de-8411-4a06-9e48-895db90484e9" />
     </td>
-    <td>내용을 작성하면, 등록되었다는 창과 함께 Working 영역에 등록이 됩니다.</td>
+    <td>내용을 작성하면, 등록되었다는 창과 함께 Working 영역에 등록이 됩니다.<br> 이때, 리스트들은 랜덤으로 부여한 색상으로 생성됩니다.</td>
   </tr>
     <tr>
     <td>
